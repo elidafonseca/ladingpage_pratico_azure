@@ -150,7 +150,7 @@ export default function QuemSomos() {
 
             <div className="flex items-center justify-center gap-4">
               <a
-                href="https://wa.me/5581999299696"
+                href="https://wa.me/5581999327339"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3.5 bg-white hover:bg-slate-50 text-slate-900 rounded-xl transition-all shadow-lg hover:shadow-xl font-semibold text-[15px]"
@@ -158,7 +158,7 @@ export default function QuemSomos() {
                 Agendar Demo
               </a>
               <a
-                href="https://wa.me/5581999299696"
+                href="https://wa.me/5581999327339"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3.5 text-white hover:bg-white/10 rounded-xl transition-all font-semibold text-[15px] border border-white/20 hover:border-white/30"

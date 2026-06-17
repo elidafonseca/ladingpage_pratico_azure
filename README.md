@@ -1,7 +1,7 @@
 
-  # Redesinger Pratico (cópia)
+  # Redesinger Pratico Atual
 
-  This is a code bundle for Redesinger Pratico (cópia). The original project is available at https://www.figma.com/design/GtZRZTy5QiZj4NBKktiREQ/Redesinger-Pratico--c%C3%B3pia-.
+  This is a code bundle for Redesinger Pratico Atual. The original project is available at https://www.figma.com/design/GtZRZTy5QiZj4NBKktiREQ/Redesinger-Pratico-Atual.
 
   ## Running the code
 

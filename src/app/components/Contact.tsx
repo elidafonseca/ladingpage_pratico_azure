@@ -138,12 +138,12 @@ export default function Contact() {
                       Telefone
                     </div>
                     <a
-                      href="https://wa.me/5581999299696"
+                      href="https://wa.me/5581999327339"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[15px] text-slate-700 hover:text-slate-900 transition-colors inline-flex items-center gap-1 group/link"
                     >
-                      +55 (81) 9 9929-9696
+                      +55 (81) 9 9932-7339
                       <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover/link:opacity-100 transition-opacity" strokeWidth={2} />
                     </a>
                   </div>

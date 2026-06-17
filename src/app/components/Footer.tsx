@@ -116,7 +116,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://wa.me/5581999299696"
+                    href="https://wa.me/5581999327339"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[14px] text-white/70 hover:text-white transition-colors inline-flex items-center gap-2"
@@ -166,7 +166,7 @@ export default function Footer() {
                   <Linkedin className="w-5 h-5" strokeWidth={1.5} />
                 </a>
                 <a
-                  href="https://wa.me/5581999299696"
+                  href="https://wa.me/5581999327339"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-slate-700 transition-colors"

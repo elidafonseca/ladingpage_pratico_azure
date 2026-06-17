@@ -448,7 +448,7 @@ export default function WebSummit() {
               Transforme resultados com inteligência operacional fiscal e financeira.
             </p>
             <div className="space-y-2 flex-1">
-              <a href="https://wa.me/5581999299696" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/5581999327339" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[rgba(37,211,102,0.2)] hover:bg-[rgba(37,211,102,0.3)] border border-[rgba(37,211,102,0.3)] rounded-lg px-2.5 py-2 transition-colors">
                 <Phone className="w-3 h-3 text-[#25D366] flex-shrink-0" />
                 <span className="text-[10px] font-semibold text-white">WhatsApp</span>

@@ -79,7 +79,7 @@ function Telefone() {
       <p className="absolute font-['Roboto:Bold',sans-serif] font-bold h-[27px] left-[194px] text-[21px] top-[421px] w-[83px]" style={{ fontVariationSettings: "'wdth' 100" }}>
         Telefone
       </p>
-      <p className="absolute font-['Roboto:Regular',sans-serif] font-normal h-[22px] left-[194px] text-[16px] top-[458px] w-[147px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`+55 (81) 9999-9999 `}</p>
+      <p className="absolute font-['Roboto:Regular',sans-serif] font-normal h-[22px] left-[194px] text-[16px] top-[458px] w-[147px]" style={{ fontVariationSettings: "'wdth' 100" }}>{`+55 (81) 9 9932-7339 `}</p>
     </div>
   );
 }

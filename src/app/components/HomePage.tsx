@@ -92,7 +92,7 @@ function Hero({ onBetaClick }: { onBetaClick: () => void }) {
                 <span className="text-[15px] sm:text-[16px] font-medium">Conhecer a Plataforma</span>
                 <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <a href="https://wa.me/5581999299696" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-4 text-slate-700 hover:text-slate-900 rounded-xl hover:bg-slate-100 transition-all text-center">
+              <a href="https://wa.me/5581999327339" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-4 text-slate-700 hover:text-slate-900 rounded-xl hover:bg-slate-100 transition-all text-center">
                 <span className="text-[15px] sm:text-[16px] font-medium">Ver Demonstração</span>
               </a>
             </div>

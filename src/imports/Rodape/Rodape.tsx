@@ -164,7 +164,7 @@ function Telefone() {
     <div className="absolute contents left-[134px] top-[206px]" data-name="telefone">
       <p className="absolute font-['Roboto:Regular',sans-serif] font-normal h-[16px] leading-[0] left-[134px] text-[16px] text-white top-[206px] w-[258px]" style={{ fontVariationSettings: "'wdth' 100" }}>
         <span className="font-['Roboto:Bold',sans-serif] font-bold leading-[normal]" style={{ fontVariationSettings: "'wdth' 100" }}>{`Telefone: `}</span>
-        <span className="leading-[normal]">+55 (81) 9999-9999</span>
+        <span className="leading-[normal]">+55 (81) 9 9932-7339</span>
       </p>
     </div>
   );
