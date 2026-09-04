@@ -4,6 +4,23 @@ const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY');
 const FROM_EMAIL = Deno.env.get('FROM_EMAIL');
 const ADMIN_EMAIL = Deno.env.get('ADMIN_EMAIL');
 
+const ALLOWED_ORIGINS = new Set([
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',
+  'https://praticodigital.com',
+  'https://www.praticodigital.com',
+  // Add the Azure Static Web Apps URL here after the resource is created.
+]);
+
+const corsHeaders = (origin: string | null) => ({
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Vary': 'Origin',
+  ...(origin && ALLOWED_ORIGINS.has(origin)
+    ? { 'Access-Control-Allow-Origin': origin }
+    : {}),
+});
+
 interface BetaAccessNotification {
   type: 'beta_access';
   data: {
@@ -32,15 +49,13 @@ interface ContactMessageNotification {
 type NotificationRequest = BetaAccessNotification | ContactMessageNotification;
 
 serve(async (req) => {
+  const origin = req.headers.get('Origin');
+
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     return new Response(null, {
-      status: 200,
-      headers: {
-        'Access-Control-Allow-Origin': 'https://www.praticodigital.com',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS',
-        'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-      },
+      status: origin && ALLOWED_ORIGINS.has(origin) ? 204 : 403,
+      headers: corsHeaders(origin),
     });
   }
 
@@ -148,9 +163,7 @@ serve(async (req) => {
       {
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': 'https://www.praticodigital.com',
-          'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          ...corsHeaders(origin),
         },
       }
     );
@@ -164,9 +177,7 @@ serve(async (req) => {
         status: 500,
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': 'https://www.praticodigital.com',
-          'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          ...corsHeaders(origin),
         },
       }
     );
